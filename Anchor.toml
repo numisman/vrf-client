@@ -1,0 +1,71 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+vrf_client = "Aui9hSDBhXDd6VpmJwVZVQHsDAHp1ToGFN8feoBkSNNG"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "/Users/numisman/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+
+[test]
+startup_wait = 10000
+
+[test.validator]
+url = "https://api.devnet.solana.com"
+
+
+[[test.validator.clone]] # switchboardProgramId
+address = "2TfB33aLaneQb5TNVwyDz3jSZXS6jdW2ARw1Dgf84XCG"
+
+[[test.validator.clone]] # switchboardProgramDataAddress
+address = "J4CArpsbrZqu1axqQ4AnrqREs3jwoyA1M5LMiQQmAzB9"
+
+[[test.validator.clone]] # switchboardIdlAddress
+address = "CKwZcshn4XDvhaWVH9EXnk3iu19t6t5xP2Sy2pD6TRDp"
+
+[[test.validator.clone]] # switchboardProgramState
+address = "BYM81n8HvTJuqZU1PmTVcwZ9G8uoji7FKM6EaPkwphPt"
+
+[[test.validator.clone]] # switchboardVault
+address = "FVLfR6C2ckZhbSwBzZY4CX7YBcddUSge5BNeGQv5eKhy"
+
+[[test.validator.clone]] # switchboardMint
+address = "So11111111111111111111111111111111111111112"
+
+[[test.validator.clone]] # tokenWallet
+address = "8WSrQ4P4j3TFXGm4GLHsAS5Z1RVds2qwbtgJ2KMEQHgq"
+
+[[test.validator.clone]] # oracleQueue
+address = "Ekmo4oKt5cCSQxY9mTqCpwE8JnFo1NUZKTLAL9rc3f5f"
+
+[[test.validator.clone]] # oracleQueueAuthority
+address = "4RFrxFLx4Hf8gnEaXvfLZ8v9pX4zvX3T2yxWYYPnXMVv"
+
+[[test.validator.clone]] # oracleQueueBuffer
+address = "BkHFR1t3cvx2fipUWZCp892jzrLMEMXupeP6tsWVe2cq"
+
+[[test.validator.clone]] # crank
+address = "3PtV3r2sWqYMwHMMbm4cPJ6T7JPon8bnqe46ZDxDBQqe"
+
+[[test.validator.clone]] # crankBuffer
+address = "BfVUpE7GGrDevtC1gtpAhHuHDb4thagWqcJuNH36yEHw"
+
+[[test.validator.clone]] # oracle
+address = "DCAonzjyNifQquhrUcrAZ6UYLpYtDmzPWz9gop6vA1Bc"
+
+[[test.validator.clone]] # oracleAuthority
+address = "4RFrxFLx4Hf8gnEaXvfLZ8v9pX4zvX3T2yxWYYPnXMVv"
+
+[[test.validator.clone]] # oracleEscrow
+address = "EJ1NmEoVjZHbYQ4uxSZrwK2pseUJn8Dq7HVvrBSrmaQu"
+
+[[test.validator.clone]] # oraclePermissions
+address = "BZJdS9i9EhfpwgVHSoJC34yo9q4QtWvhMLMGkKi5pVvD"
